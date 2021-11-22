@@ -1,0 +1,66 @@
+#### GET ALL
+GET http://localhost:3001/api/blogs
+Content-Type: application/json
+
+
+#### Insert
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization:  bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsZTEyMyIsImlkIjoiNjE5Yjk4NzJiMTQ3OTNmNzgwN2M5OGM4IiwiaWF0IjoxNjM3NTg3MDcyfQ.u3ppdfn_TeIPj4uu8LeJ8ovfV5XRg1DXq95uAWN6WO4
+
+{
+    "title": "Libro 3",
+    "author": "XXXXX",
+    "url": "www.libro1.net"
+}
+
+#### Delete
+DELETE  http://localhost:3001/api/blogs/619b8cfe5c741fd504de7c6f
+Content-Type: application/json
+Authorization:  bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFiYzEyMyIsImlkIjoiNjE5YWI2MDJiMWU2MzYzOTA2ZWM4ZmUyIiwiaWF0IjoxNjM3NTg0MDU2fQ.KedCrgHXHfXHzwNCchn1uLi3SOX-r5_UDpkKPJjiFL0
+
+
+#### Most Blogs
+GET http://localhost:3001/api/blogs/mostBlogs
+
+#### Most Likes
+GET http://localhost:3001/api/blogs/mostLikes
+
+
+## Users ###
+
+### All users
+GET http://localhost:3001/api/users
+
+#### Insert
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+    "username": "ale123",
+    "name": "ale",
+    "password": "ale123"
+}
+
+
+### token ###
+
+post http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+    "username":"abc123",
+    "password":"123"
+}
+
+#####
+
+post http://localhost:3001/api/login
+Content-Type: application/json
+
+{
+    "username":"ale123",
+    "password":"ale123"
+}
+
+#####

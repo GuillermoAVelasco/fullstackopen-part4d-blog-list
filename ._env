@@ -1,0 +1,2 @@
+MONGOURL = ruta
+PORT=3001
